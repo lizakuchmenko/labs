@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+gcc -c ${1}.c -o tmp/${1}.o &&  \
+		gcc -o tmp/${1} tmp/${1}.o &&  \
+		tmp/${1}
